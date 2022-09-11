@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sprinkles Bakery</title>
+<link rel="stylesheet" href="SBcss.css">
+</head>
+
+<body>
+	<nav>
+		<img class="logo" src="images/cupcakeLogo1.png" alt="cupcake logo"/>
+		<p class="title">Sprinkles Bakery</p>
+		<ul>
+			<li><a href="SBhome.html">Home</a></li>
+			<li><a href="SBmenu.html">Menu</a></li>
+			<li><a href="SBweddings.html">Weddings</a></li>
+			<li><a class="active" href="SBfaq.html">FAQ</a></li>
+			<li><a href="mailto: order@sprinklesbakery.com">Contact Us</a></li>
+		</ul>
+	</nav>
+	<br>	
+	<div class="content">
+		<div id="menu">
+			<h2>~ Frequently Asked Questions ~</h2>
+			<button class="accordion">How do I place an order?</button>
+			<div class="panel">
+			  <p>Orders can easily be placed by e-mailing us at <a href="mailto: sprinklesbakery@gmail.com">order@SprinklesBakery.com</a></p>
+			  <p>Please note that all orders, excluding wedding cakes, must be placed at least 2 weeks in advance. <br>Wedding cake orders must be placed at least 4-6 months in advance. 
+			  <hr>
+			</div>
+
+			<button class="accordion">What is your general policy?</button>
+			<div class="panel">
+			  <p>We do not offer cash or credit refunds for any cake or dessert order. All sales are final.</p>
+			  <hr>
+			</div>
+			
+			<button class="accordion">Do you deliver?</button>
+			<div class="panel">
+			  <p>Yes! We deliver to any local address! We do not recommend cake pickup for cakes with more than two tiers. <br>If you choose to pick up your cake and transport it yourself, please be aware that we will not be liable or responsible for the cake once it has left our location</p>
+			  <hr>
+			</div>
+			
+			<button class="accordion">Do you offer gluten-free desserts?</button>
+			<div class="panel">
+			  <p>No. We are not a gluten/allergen free certified bakery, therefore for the safety of our clients, we do no provide any gluten-free desserts.</p>
+			  <hr>
+			</div>
+			
+			<button class="accordion">Allergy Policy</button>
+			<div class="panel">
+			  <p>We offer nut free products but we are not a gluten/allergen free bakery.<br>Some products may include nuts and/or other allergens. No guarantee can be made to people with allergies, if you do have an allergy, please let us know beforehand so we can make sure that your order hasn’t touched any nuts/ allergens.</p>
+			  <hr>
+			</div>
+			
+		</div>	
+	</div>
+	
+	<footer>
+		<p>Disclaimer: This is a fictitious company and is developed as an education project. Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+	</footer>
+	
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("activeClick");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			  panel.style.display = "none";
+			} else {
+			  panel.style.display = "block";
+			}
+		  });
+		}
+	</script>
+</body>
